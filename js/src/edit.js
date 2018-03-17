@@ -138,6 +138,7 @@ export function initialize( args ) {
 		} = wp.plugins;
 		const {
 			PluginSidebar,
+			PluginMoreMenuItem,
 		} = wp.editPost.__experimental;
 		const {
 			Fragment
@@ -155,6 +156,11 @@ export function initialize( args ) {
 					<PluginSidebar name="readability" title="Seo Analysis">
 						Text
 					</PluginSidebar>
+					<PluginMoreMenuItem
+						name="readability-menu-item"
+						title="Readability Analysis"
+						target="readability"
+						type="sidebar"/>
 				</Fragment>
 			);
 		};
